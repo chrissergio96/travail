@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="variable.js">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="homme">Welcome</h1>
+
+        <button onclick="choix()">ajouter</button>
+    </div>
+
+    <script>
+            
+         var nom = ["levy","jooris","smeb","Yoyo","lajesa","tele","christian"];
+         let element = Math.floor(Math.random()*nom.length) ;
+         console.log(element)
+        
+         console.log(nom);
+         console.log(`${nom[0].length}, ${nom[1].length}  et ${nom[2].length}`)
+         console.log(nom[element]);
+
+         let students = [
+
+          {nom: 'Safou', prenom: 'Serge Christian', age: '26ans'},
+          {nom: 'Mounanga', prenom: 'Christ Jooris', age: '28ans'},
+          {nom: 'Nziengui', prenom: 'Braine ', age: '21ans'},
+          {nom: 'Ngoma', prenom: 'Freddy', age: '27ans'},
+          {nom: 'Sagounamah', prenom: 'Emmanuel', age: '22ans'},
+
+         ]
+         let eleve = {nom: 'Nziengui', prenom: 'Braine ', age: '21ans'};
+
+         let table = Math.random()*students.length
+         let index = Math.floor(table)
+         console.log(table);
+         console.log(students);
+         console.log(students[index].nom,students[index].prenom,students[index].age,)
+
+         let couple = ["femme","homme","mixte"]
+
+         var hommes = ['jooris','tele','levy','christian','emmanuel','franck']
+         var femmes = ['benie','gaella','naicka','wendy','anouchka','marland']
+         var mixtes = ['sont fait pour etre ensemble','ne sont pas fait pour etre ensemble','sont des freres','sont fiancés','se sont séparés']
+
+         var homme = Math.floor(Math.random()*hommes.length);
+         var femme = Math.floor(Math.random()*femmes.length);
+         var mixte = Math.floor(Math.random()*mixtes.length);
+
+         var homme = hommes[homme];
+         var femme = femmes[femme];
+         var mixte = mixtes[mixte];
+
+         document.write(`${homme} et ${femme} ${mixte}`)
+ 
+        </script>
+</body>
+</html>
